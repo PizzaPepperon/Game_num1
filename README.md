@@ -13,7 +13,6 @@ Screenshot Games
   <img width="704" alt="Screenshot 3" src="https://github.com/PizzaPepperon/Game_num1/blob/main/src/screen3.png">
   <img width="704" alt="Screenshot 4" src="https://github.com/PizzaPepperon/Game_num1/blob/main/src/screen4.png">
   <img width="704" alt="Screenshot 5" src="https://github.com/PizzaPepperon/Game_num1/blob/main/src/screen5.png">
-  <img width="704" alt="Screenshot 6" src="https://github.com/PizzaPepperon/Game_num1/blob/main/src/screen6.png">
 </p>
 
 ## Downloads
