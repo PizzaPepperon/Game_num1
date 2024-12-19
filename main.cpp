@@ -14,6 +14,7 @@
 #include "source/yellow_fruit.h"
 #include "source/green_fruit.h"
 #include "source/player.h"
+#include "source/icon.h"
 
 const int SCREEN_WIDTH = 920;
 const int SCREEN_HEIGHT = 700;
@@ -68,7 +69,14 @@ void updateDifficultySettings(Difficulty& currentDifficulty, float& currentSpeed
 };
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Snake Game");
+    sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Daminem Snake Game");
+
+    sf::Image icon;
+    if (icon.loadFromMemory(icon_jpg, icon_jpg_len))
+    {
+        window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
+    }
+
     window.setFramerateLimit(60);
 
     sf::Font font;
@@ -248,9 +256,9 @@ int main() {
                                 direction = "RIGHT";
                             if (event.key.code == sf::Keyboard::F11) {
                                 if (window.getSize() == sf::Vector2u(SCREEN_WIDTH, SCREEN_HEIGHT)) {
-                                    window.create(sf::VideoMode::getDesktopMode(), "Snake Game", sf::Style::Fullscreen);
+                                    window.create(sf::VideoMode::getDesktopMode(), "Daminem Snake Game", sf::Style::Fullscreen);
                                 } else {
-                                    window.create(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Snake Game");
+                                    window.create(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Daminem Snake Game");
                                 }
                                 window.setFramerateLimit(60);
                             }
